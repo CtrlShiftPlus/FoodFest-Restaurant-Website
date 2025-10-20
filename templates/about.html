@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title%}About Us{%endblock%}
+{% block body %}
+<div style="position: relative; width: 100%; height: 300px; overflow: hidden;">
+  <!-- Background image with cover and overlay -->
+  <div style="
+    background-image: url('https://plus.unsplash.com/premium_photo-1705318149886-c088e38358f8?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE3fHxmb29kfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  "></div>
+  
+  <!-- Overlay for opacity -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* white overlay with opacity */
+    z-index: 1;
+  "></div>
+  
+  <!-- Centered text -->
+  <h1 style="
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-size: 48px;
+    color: #000; /* or white depending on background */
+    z-index: 2;
+  ">About Us</h1>
+</div>
+<div class="features">
+      <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1" style:"text-align:center">
+        Locally Sourced Ingredients, <span class="text-body-secondary">An initiative undertaken by our group</span>
+      </h2>
+      <p class="lead">
+        At our establishment, we are committed to using only locally sourced ingredients for nearly all of our dishes. This initiative is driven by our desire to support and promote the hardworking farmers and producers within our region. By sourcing ingredients locally, we not only ensure the freshest and highest quality produce for our customers but also contribute to the sustainability and vitality of our local economy. We believe in fostering strong relationships with local farmers, valuing their dedication and hard work, and helping to preserve the agricultural traditions that are vital to our community’s identity. 
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="https://images.unsplash.com/photo-1432457990754-c8b5f21448de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGZvb2R8ZW58MHx8MHx8fDA%3D" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Feature Image" style="width: 500px; height: 500px; object-fit: cover;">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1" style:"text-align:center">
+        We offer all sorts of Desserts,
+        </span> Come cater your sweet tooth!
+      </h2>
+      <p class="lead">
+        At the end of a satisfying meal, our carefully curated selection of desserts provides the perfect way to indulge and complete your dining experience. We take pride in offering a variety of delectable treats, crafted with quality ingredients and a touch of creativity. From rich, velvety chocolates and creamy custards to freshly baked cakes and fruity tarts, our desserts are designed to delight every palate. Whether you're craving a comforting classic or something a little more adventurous, our dessert menu promises a sweet ending that will leave you feeling satisfied and eager to return. We believe that a great meal is truly memorable when accompanied by a delightful dessert, and we are dedicated to making that moment special for each of our guests.
+      </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="https://plus.unsplash.com/premium_photo-1680172800885-61c5f1fc188e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGZvb2R8ZW58MHx8MHx8fDA%3D" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Feature Image" style="width: 500px; height: 500px; object-fit: cover;">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1" style:"text-align:center">
+        Don't Miss Out, <span class="text-body-secondary">on our Unforgettable culinary experience</span>
+      </h2>
+      <p class="lead">
+        You truly don’t want to miss out on this amazing culinary journey that we have prepared for you. Our carefully crafted dishes, made with locally sourced ingredients and a passion for excellence, promise to tantalize your taste buds and leave you with unforgettable memories. From innovative flavors to comforting classics, every bite is designed to surprise and delight. This is more than just a meal—it's an experience that celebrates the artistry of cooking and the richness of our region. So, come and indulge in this extraordinary culinary adventure; missing out would mean missing a truly exceptional moment of flavor and hospitality.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="https://images.unsplash.com/photo-1586511934875-5c5411eebf79?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ2fHxmb29kfGVufDB8fDB8fHww" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Feature Image" style="width: 500px; height: 500px; object-fit: cover;">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <!-- /END THE FEATURETTES -->
+</div>
+{% endblock body %}

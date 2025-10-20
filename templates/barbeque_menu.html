@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title%}Barbeques{%endblock%}
+{% block body %}
+<div class="overlay-text" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(247, 72, 33, 0.2);
+    border-radius:55px;
+    font-size: 4rem; /* Adjust size as needed */
+    padding: 10px 20px; /* Padding for small box effect */
+    display: inline-block; /* Wrap background around text */
+    text-shadow: 2px 2px 4px rgba(252, 252, 252, 0.7);
+    color: white;
+  ">
+    Barbeque Menu
+  </div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="margin-top:0px;margin-bottom:20px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://plus.unsplash.com/premium_photo-1667443306658-4664947ffa46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style="height: 400px; width: 100%; object-fit: cover;" alt="bbq1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1522244451342-a41bf8a13d73?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style="height: 400px; width: 100%; object-fit: cover;" alt="bbq2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://plus.unsplash.com/premium_photo-1693221705557-31b58c203e64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhcmJlcXVlfGVufDB8fDB8fHww" style="height: 400px; width: 100%; object-fit: cover;" alt="bbq3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="items">
+    <h2 style="margin-left:50px;">Menu</h2>
+    <ul style="margin-bottom:25px;" class="list-group list-group-flush">
+        <li class="list-group-item">1. Pulled pork</li>
+        <li class="list-group-item">2. BBQ Chicken</li>
+        <li class="list-group-item">3. Chicken souvlaki</li>
+        <li class="list-group-item">4. Shrimp skewers</li>
+        <li class="list-group-item">5. BBQ jackfruit burger</li>
+        <li class="list-group-item">6. Grilled paneer</li>
+        <li class="list-group-item">7. Chimichurri</li>
+    </ul>
+</div>
+{% endblock body %}
